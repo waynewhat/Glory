@@ -6,6 +6,8 @@ import categoryEdit from '../views/categoryEdit.vue'
 import categoryList from '../views/categoryList.vue'
 import itemsEdit from '../views/itemsEdit.vue'
 import itemsList from '../views/itemsList.vue'
+import herosEdit from '../views/herosEdit.vue'
+import herosList from '../views/herosList.vue'
 
 
 
@@ -25,7 +27,11 @@ Vue.use(VueRouter)
 
       {path:'/items/create',component:itemsEdit},
       {path:'/items/edit/:id',component:itemsEdit,props:true},
-      {path:'/items/list',component:itemsList}
+      {path:'/items/list',component:itemsList},
+
+      {path:'/heros/create',component:herosEdit},
+      {path:'/heros/edit/:id',component:herosEdit,props:true},
+      {path:'/heros/list',component:herosList}
     ]
   },
   
