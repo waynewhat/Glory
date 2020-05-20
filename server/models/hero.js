@@ -13,19 +13,19 @@ const schema=new mongoose.Schema({
         survive:{tpe:Number},        
     },
     skills:[{
-        icon:{string},
-        name:{string},
-        description:{string},
-        tips:{string},
+        icon:{type:String},
+        name:{type:String},
+        description:{type:String},
+        tips:{type:String},
     }],
     items1:[{type:mongoose.SchemaTypes.ObjectId,ref:'Item'}],
     items2:[{type:mongoose.SchemaTypes.ObjectId,ref:'Item'}],
-    usageTips:{type:string},
-    battleTips:{type:string},
-    teamTips:{type:string},
+    usageTips:{type:String},
+    battleTips:{type:String},
+    teamTips:{type:String},
     partners:[{
         hero:{type:mongoose.SchemaTypes.ObjectId,ref:'Hero'},
-        description:{type:string},
+        description:{type:String},
 
     }],
 
