@@ -105,6 +105,7 @@ export default {
       categories:[],
       items:[],
       model:{
+        
         // name:'',
         // avatar:'',
         scores:{
