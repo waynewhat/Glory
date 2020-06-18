@@ -82,8 +82,8 @@
               <el-form-item label="小提示">
                 <el-input type="textarea" v-model="item.tips"></el-input>
               </el-form-item>
-              <el-form-item label="删除">
-                <el-button size="small" type="danger" @click="model.skills.splice(i,1)"></el-button>
+              <el-form-item >
+                <el-button size="small" type="danger" @click="model.skills.splice(i,1)">删除</el-button>
               </el-form-item>
             </el-col>
           </el-row>

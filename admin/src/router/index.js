@@ -8,6 +8,9 @@ import itemsEdit from '../views/itemsEdit.vue'
 import itemsList from '../views/itemsList.vue'
 import herosEdit from '../views/herosEdit.vue'
 import herosList from '../views/herosList.vue'
+import articlesList from '../views/articlesList.vue'
+import articlesEdit from '../views/articlesEdit.vue'
+
 
 
 
@@ -31,7 +34,11 @@ Vue.use(VueRouter)
 
       {path:'/heros/create',component:herosEdit},
       {path:'/heros/edit/:id',component:herosEdit,props:true},
-      {path:'/heros/list',component:herosList}
+      {path:'/heros/list',component:herosList},
+
+      {path:'/articles/create',component:articlesEdit},
+      {path:'/articles/edit/:id',component:articlesEdit,props:true},
+      {path:'/articles/list',component:articlesList}
     ]
   },
   
