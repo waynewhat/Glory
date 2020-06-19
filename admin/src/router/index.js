@@ -4,12 +4,19 @@ import Home from '../views/Home.vue'
 import main from '../views/main.vue'
 import categoryEdit from '../views/categoryEdit.vue'
 import categoryList from '../views/categoryList.vue'
+
 import itemsEdit from '../views/itemsEdit.vue'
 import itemsList from '../views/itemsList.vue'
+
 import herosEdit from '../views/herosEdit.vue'
 import herosList from '../views/herosList.vue'
+
 import articlesList from '../views/articlesList.vue'
 import articlesEdit from '../views/articlesEdit.vue'
+
+import adEdit from '../views/adEdit.vue'
+import adList from '../views/adList.vue'
+
 
 
 
@@ -38,7 +45,11 @@ Vue.use(VueRouter)
 
       {path:'/articles/create',component:articlesEdit},
       {path:'/articles/edit/:id',component:articlesEdit,props:true},
-      {path:'/articles/list',component:articlesList}
+      {path:'/articles/list',component:articlesList},
+
+      {path:'/ads/create',component:adEdit},
+      {path:'/ads/edit/:id',component:adEdit,props:true},
+      {path:'/ads/list',component:adList}
     ]
   },
   
